@@ -105,6 +105,31 @@ border-color: rgb(2, 158, 255);</string>
       <height>120</height>
      </size>
     </property>
+    <widget class="QPushButton" name="Exitbutton">
+     <property name="geometry">
+      <rect>
+       <x>1240</x>
+       <y>25</y>
+       <width>70</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI Black</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(255, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>EXIT</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QWidget" name="DebugMessageBox" native="true">
     <property name="geometry">
@@ -127,17 +152,65 @@ border-color: rgb(2, 158, 255);</string>
       <height>100</height>
      </size>
     </property>
-    <widget class="QTextBrowser" name="DebugMessage">
+    <widget class="QPushButton" name="OpenDebugWin">
+     <property name="geometry">
+      <rect>
+       <x>1240</x>
+       <y>10</y>
+       <width>70</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft JhengHei UI</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(2, 209, 255);</string>
+     </property>
+     <property name="text">
+      <string>Debug
+Window</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="SmallDebugWin">
      <property name="geometry">
       <rect>
        <x>120</x>
-       <y>0</y>
+       <y>10</y>
        <width>1000</width>
-       <height>80</height>
+       <height>60</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <family>Adobe 黑体 Std R</family>
+       <pointsize>16</pointsize>
+       <kerning>false</kerning>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);</string>
+      <string notr="true">background-color: rgb(2, 158, 255);
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lineWidth">
+      <number>10</number>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
      </property>
     </widget>
    </widget>
@@ -202,7 +275,7 @@ border-color: rgb(2, 158, 255);</string>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">color: rgb(0, 170, 255);</string>
+      <string notr="true">color: rgb(88, 121, 180);</string>
      </property>
      <property name="text">
       <string>Micro White Controller Pad</string>
@@ -353,17 +426,29 @@ border-color: rgb(2, 158, 255);</string>
        <height>50</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <family>Adobe 黑体 Std R</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
      <property name="autoFillBackground">
       <bool>false</bool>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(0, 170, 255);
-selection-color: rgb(0, 85, 0);
-background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 235, 235, 206), stop:0.35 rgba(255, 188, 188, 80), stop:0.4 rgba(255, 162, 162, 80), stop:0.425 rgba(255, 132, 132, 156), stop:0.44 rgba(252, 128, 128, 80), stop:1 rgba(255, 255, 255, 0));
-border-radius: 35px;  border: 10px groove gray;
-border-style: outset;
-border-color: rgb(170, 255, 0);
-background-color: rgb(0, 255, 0);</string>
+      <string notr="true">background-color: rgb(0, 255, 0);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lineWidth">
+      <number>4</number>
+     </property>
+     <property name="midLineWidth">
+      <number>2</number>
      </property>
      <property name="text">
       <string>SAFE</string>
@@ -408,6 +493,42 @@ background-color: rgb(0, 255, 0);
       </property>
       <property name="text">
        <string/>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="AutoText">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>90</y>
+        <width>76</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(89, 122, 180);</string>
+      </property>
+      <property name="text">
+       <string>AUTO</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
     </widget>
