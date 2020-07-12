@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Mainpage</class>
+ <widget class="QMainWindow" name="Mainpage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>1920</width>
+    <height>1080</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Mainpage</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <widget class="QWidget" name="Main" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1420</width>
+      <height>860</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1420</width>
+      <height>860</height>
+     </size>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>1420</width>
+      <height>860</height>
+     </size>
+    </property>
+    <widget class="QFrame" name="Screen">
+     <property name="geometry">
+      <rect>
+       <x>67</x>
+       <y>67</y>
+       <width>1286</width>
+       <height>726</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>1286</width>
+       <height>726</height>
+      </size>
+     </property>
+     <property name="baseSize">
+      <size>
+       <width>1286</width>
+       <height>726</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 5px;  border: 10px groove gray;
+border-style: outset;
+border-color: rgb(2, 158, 255);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="lineWidth">
+      <number>3</number>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="ModeButtonArea" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>860</y>
+      <width>1420</width>
+      <height>120</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1420</width>
+      <height>120</height>
+     </size>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>1420</width>
+      <height>120</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QWidget" name="DebugMessageBox" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>980</y>
+      <width>1420</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1420</width>
+      <height>100</height>
+     </size>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>1420</width>
+      <height>100</height>
+     </size>
+    </property>
+    <widget class="QTextBrowser" name="DebugMessage">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>0</y>
+       <width>1000</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="OtherArea" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1420</x>
+      <y>640</y>
+      <width>500</width>
+      <height>440</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>500</width>
+      <height>440</height>
+     </size>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>500</width>
+      <height>440</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QWidget" name="Title" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1420</x>
+      <y>0</y>
+      <width>500</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>500</width>
+      <height>40</height>
+     </size>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>500</width>
+      <height>40</height>
+     </size>
+    </property>
+    <widget class="QLabel" name="TitleWords">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>500</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe Print</family>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 170, 255);</string>
+     </property>
+     <property name="text">
+      <string>Micro White Controller Pad</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Tab" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1420</x>
+      <y>40</y>
+      <width>500</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>500</width>
+      <height>600</height>
+     </size>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>500</width>
+      <height>600</height>
+     </size>
+    </property>
+    <widget class="QWidget" name="Power" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>40</y>
+       <width>221</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/new/pic/resource/powernov.png);</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="CameraTitle" native="true">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>150</y>
+       <width>161</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/new/pic/resource/camera.png);</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="OtherWords" native="true">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>220</y>
+       <width>141</width>
+       <height>311</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/new/pic/resource/其他文字.png);</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="A1">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>245</y>
+       <width>180</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>0</number>
+     </property>
+     <property name="maximum">
+      <number>180</number>
+     </property>
+     <property name="value">
+      <number>90</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="A2">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>325</y>
+       <width>180</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>30</number>
+     </property>
+     <property name="maximum">
+      <number>150</number>
+     </property>
+     <property name="value">
+      <number>90</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="A3">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>405</y>
+       <width>180</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>30</number>
+     </property>
+     <property name="maximum">
+      <number>150</number>
+     </property>
+     <property name="value">
+      <number>90</number>
+     </property>
+     <property name="sliderPosition">
+      <number>90</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Led">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>480</y>
+       <width>101</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 170, 255);
+selection-color: rgb(0, 85, 0);
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 235, 235, 206), stop:0.35 rgba(255, 188, 188, 80), stop:0.4 rgba(255, 162, 162, 80), stop:0.425 rgba(255, 132, 132, 156), stop:0.44 rgba(252, 128, 128, 80), stop:1 rgba(255, 255, 255, 0));
+border-radius: 35px;  border: 10px groove gray;
+border-style: outset;
+border-color: rgb(170, 255, 0);
+background-color: rgb(0, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>SAFE</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QWidget" name="Auto" native="true">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>20</y>
+       <width>76</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <widget class="QPushButton" name="AutoButton">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>76</width>
+        <height>76</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 170, 255);
+selection-color: rgb(0, 85, 0);
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 235, 235, 206), stop:0.35 rgba(255, 188, 188, 80), stop:0.4 rgba(255, 162, 162, 80), stop:0.425 rgba(255, 132, 132, 156), stop:0.44 rgba(252, 128, 128, 80), stop:1 rgba(255, 255, 255, 0));
+border-radius: 35px;  border: 10px groove gray;
+border-style: outset;
+border-color: rgb(170, 255, 0);
+background-color: rgb(0, 255, 0);
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <zorder>Auto</zorder>
+    <zorder>Power</zorder>
+    <zorder>CameraTitle</zorder>
+    <zorder>OtherWords</zorder>
+    <zorder>A1</zorder>
+    <zorder>A2</zorder>
+    <zorder>A3</zorder>
+    <zorder>Led</zorder>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

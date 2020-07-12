@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/new/pic">
+        <file>resource/边框.png</file>
+        <file>resource/电源.png</file>
+        <file>resource/文字.png</file>
+        <file>resource/camera.png</file>
+        <file>resource/其他文字.png</file>
+        <file>resource/powernov.png</file>
+    </qresource>
+</RCC>
