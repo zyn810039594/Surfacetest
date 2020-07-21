@@ -72,7 +72,7 @@
       </size>
      </property>
      <property name="styleSheet">
-      <string notr="true">border-radius: 5px;  border: 10px groove gray;
+      <string notr="true">border-radius: 25px;  border: 10px groove gray;
 border-style: outset;
 border-color: rgb(2, 158, 255);</string>
      </property>
@@ -82,6 +82,37 @@ border-color: rgb(2, 158, 255);</string>
      <property name="lineWidth">
       <number>3</number>
      </property>
+     <widget class="QLabel" name="ScreenPic">
+      <property name="geometry">
+       <rect>
+        <x>3</x>
+        <y>3</y>
+        <width>1280</width>
+        <height>720</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>1280</width>
+        <height>720</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>1280</width>
+        <height>720</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>1280</width>
+        <height>720</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
     </widget>
    </widget>
    <widget class="QWidget" name="ModeButtonArea" native="true">
@@ -361,10 +392,10 @@ color: rgb(255, 255, 255);</string>
       <number>0</number>
      </property>
      <property name="maximum">
-      <number>180</number>
+      <number>255</number>
      </property>
      <property name="value">
-      <number>90</number>
+      <number>128</number>
      </property>
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
@@ -380,13 +411,13 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="minimum">
-      <number>30</number>
+      <number>0</number>
      </property>
      <property name="maximum">
-      <number>150</number>
+      <number>255</number>
      </property>
      <property name="value">
-      <number>90</number>
+      <number>128</number>
      </property>
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
@@ -402,16 +433,16 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="minimum">
-      <number>30</number>
+      <number>0</number>
      </property>
      <property name="maximum">
-      <number>150</number>
+      <number>255</number>
      </property>
      <property name="value">
-      <number>90</number>
+      <number>128</number>
      </property>
      <property name="sliderPosition">
-      <number>90</number>
+      <number>128</number>
      </property>
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
@@ -532,6 +563,33 @@ background-color: rgb(0, 255, 0);
       </property>
      </widget>
     </widget>
+    <widget class="QLabel" name="PowerNum">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>60</y>
+       <width>101</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft JhengHei UI</family>
+       <pointsize>27</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(89, 122, 180);</string>
+     </property>
+     <property name="text">
+      <string>12.2V</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
     <zorder>Auto</zorder>
     <zorder>Power</zorder>
     <zorder>CameraTitle</zorder>
@@ -540,6 +598,7 @@ background-color: rgb(0, 255, 0);
     <zorder>A2</zorder>
     <zorder>A3</zorder>
     <zorder>Led</zorder>
+    <zorder>PowerNum</zorder>
    </widget>
   </widget>
  </widget>
