@@ -208,7 +208,7 @@ background-color: rgb(255, 0, 0);</string>
 Window</string>
      </property>
     </widget>
-    <widget class="QTextBrowser" name="SmallDebugWin">
+    <widget class="QLabel" name="SmallDebugWin">
      <property name="geometry">
       <rect>
        <x>120</x>
@@ -217,11 +217,16 @@ Window</string>
        <height>60</height>
       </rect>
      </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
      <property name="font">
       <font>
        <family>Adobe 黑体 Std R</family>
        <pointsize>16</pointsize>
-       <kerning>false</kerning>
       </font>
      </property>
      <property name="styleSheet">
@@ -237,11 +242,8 @@ color: rgb(255, 255, 255);</string>
      <property name="lineWidth">
       <number>10</number>
      </property>
-     <property name="verticalScrollBarPolicy">
-      <enum>Qt::ScrollBarAlwaysOff</enum>
-     </property>
-     <property name="horizontalScrollBarPolicy">
-      <enum>Qt::ScrollBarAlwaysOff</enum>
+     <property name="text">
+      <string/>
      </property>
     </widget>
    </widget>
